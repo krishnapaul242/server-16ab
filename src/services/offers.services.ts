@@ -8,6 +8,7 @@ class OfferService {
 
   public async findAllOffers(): Promise<Offer[]> {
     const allOffers: Offer[] = await this.offers.findMany();
+    console.log(allOffers);
     return allOffers;
   }
 
